@@ -1,4 +1,4 @@
-
+package java8.Lambda;
 //lambda expression tutorial
 /*
 ->lambda expression is not belongs to any class and object
@@ -11,26 +11,26 @@ interface  shape{
 }
 
 /*
-class rectangle implements shape{
+class rectangle implements java8.Lambda.shape{
 
         @Override
         public void draw() {
             System.out.println("rectangle interface implementation");}
 }*/
 /*
-class square implements shape{
+class square implements java8.Lambda.shape{
 
     @Override
     public void draw() {
-        System.out.println("square implementation from shape interface");
+        System.out.println("square implementation from java8.Lambda.shape interface");
 
     }
 }
-class circle implements shape{
+class circle implements java8.Lambda.shape{
 
     @Override
     public void draw() {
-        System.out.println("circle class implement shape interface");
+        System.out.println("circle class implement java8.Lambda.shape interface");
 
     }
 }*/
@@ -44,10 +44,10 @@ public class lambdaexample {
         shape rectangle = ()->System.out.println("rectangle interface implementation");
         rectangle.draw();
 
-        shape circle = ()->System.out.println("circle class implement shape interface");
+        shape circle = ()->System.out.println("circle class implement java8.Lambda.shape interface");
         circle.draw();
 
-        shape square = ()->System.out.println("square implementation from shape interface");
+        shape square = ()->System.out.println("square implementation from java8.Lambda.shape interface");
         square.draw();
 
     }
